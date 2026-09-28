@@ -1,0 +1,32 @@
+{
+  "name": "genpark-agent-human-in-the-loop-approval-gate-skill",
+  "version": "1.0.0",
+  "description": "Human-in-the-Loop policy gatekeeper enforcing risk tiers, reversible checkpoints & token approval bounds for autonomous agents.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "hitl",
+    "safety-guardrails",
+    "human-in-the-loop",
+    "approval-gate",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "evaluate_action_risk_tier",
+      "description": "Classify action risk (LOW/MEDIUM/HIGH/CRITICAL) and determine approval requirements."
+    },
+    {
+      "name": "create_reversible_checkpoint",
+      "description": "Create rollback snapshot before mutating actions."
+    },
+    {
+      "name": "issue_approval_token",
+      "description": "Generate cryptographically verifiable one-time execution token."
+    },
+    {
+      "name": "run_benchmark_approval_gate",
+      "description": "Run human-in-the-loop safety gate benchmark."
+    }
+  ]
+}
